@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policy Visualisation Study</title>
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/create-1.css">
+<link rel="stylesheet" href="/assets/css/find-1.css">
+<link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css">
+<script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
+
+
+<script src="assets/js/script.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-label">Question 1 / xxx</div>
+</header>
+
+<!-- Task layout -->
+<div class="task-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <h2>Loading</h2>
+            <label for="actors">Select actors:</label>
+            <select id="actors" multiple>
+                <option value="Alice">Bpost</option>
+                <option value="Bob">Stad Brugge</option>
+                <option value="Charlie">Colruyt</option>
+                <option value="David">Az-SintJan</option>
+            </select>
+            <button id="submitTask">Submit Task</button>
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <h2>Something went wrong...</h2>
+        <p>Try again by reloading the page.</p>
+    </main>
+</div>
+
+<!-- Sticky footer -->
+<footer class="footer-nav">
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <button id="nextButton" disabled>Next</button>
+</footer>
+
+</body>
+</html>

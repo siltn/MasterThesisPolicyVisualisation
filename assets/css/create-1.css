@@ -1,0 +1,82 @@
+/* -----  General Content ----- */
+#policyForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    color: #1f243d;
+}
+
+#policyForm h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #1f243d;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* -----  Input fields ----- */
+#policyForm label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #1f243d;
+}
+
+#policyForm .field{
+    display: none;
+}
+
+Form input[type="text"],
+#policyForm input[type="url"],
+#policyForm input[type="email"],
+#policyForm input[type="number"],
+#policyForm input[type="datetime-local"],
+#policyForm textarea,
+#policyForm select {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #b8b8cc;
+    background-color: #fafaff;
+    font-size: 1rem;
+    color: #1f243d;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+#policyForm textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#policyForm select {
+    cursor: pointer;
+}
+
+#policyForm input:focus,
+#policyForm textarea:focus,
+#policyForm select:focus {
+    outline: none;
+    border-color: #7C4DFF;
+    box-shadow: 0 0 0 2px rgba(124,77,255,0.2);
+}
+
+#policyForm button[type="submit"],
+#policyForm button[type="button"] {
+    padding: 0.85rem 1.4rem;
+    background-color: #7C4DFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#policyForm button:hover {
+    background-color: #6d3dee;
+}
+
+#policyTranslation{
+    display: none;
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "question": 1,
+    "title": "Create a policy",
+    "type": "create",
+    "sidebar": {
+      "instructions": "Add John Doe. Make sure all fields are filled correctly.",
+      "elements": {
+        "name": "",
+        "address": "",
+        "duration": ""
+      }
+    },
+    "body": {
+      "name": "",
+      "address": "",
+      "duration": ""
+    }
+  },
+  {
+    "question": 1,
+    "title": "Create a policy",
+    "type": "review",
+    "sidebar": {
+      "instructions": "Add John Doe. Make sure all fields are filled correctly.",
+      "elements": {
+        "name": "",
+        "address": "",
+        "duration": ""
+      }
+    },
+    "body": {
+      "name": "",
+      "address": "",
+      "duration": ""
+    }
+  },
+
+
+  {
+    "question": 2,
+    "title": "Find a policy",
+    "type": "find",
+    "sidebar": {
+      "instructions": "Select all actors who can access this policy.",
+      "select": {
+        "title": "Actors",
+        "options": ["Alice", "Bob", "Charlie", "David"]
+      }
+    },
+    "body": {}
+  },
+  {
+    "question": 2,
+    "title": "Find a policy",
+    "type": "review",
+    "sidebar": {
+      "instructions": "Select all actors who can access this policy."
+    },
+    "body": {}
+  },
+
+
+
+  {
+    "question": 3,
+    "title": "Edit a policy",
+    "type": "create",
+    "sidebar": {
+      "instructions": "Edit John Doe’s policy. All fields are pre-filled."
+    },
+    "body": {
+      "url": "http://policyUrl",
+      "policyType": "Offer",
+      "provider": "http://dataProvider",
+      "duration": "2 days",
+      "dataUri": "http://dataUri",
+      "EndTime": "2025-11-14T20:13",
+      "useEndTime": true,
+      "Purpose": "purpose3",
+      "usePurpose": true
+    }
+  },
+    {
+    "question": 3,
+    "title": "Edit a policy",
+    "type": "review",
+    "sidebar": {
+    "instructions": "Edit John Doe’s policy. All fields are pre-filled."
+    },
+    "body": {}
+  }
+]

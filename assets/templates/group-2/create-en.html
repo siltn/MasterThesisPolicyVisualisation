@@ -1,0 +1,136 @@
+<form id="policyForm">
+  <h1>CREATE VERSION 2</h1>
+  <div class="single-line">
+    <div>
+      <label>URL</label>
+      <input required type="url" id="url" placeholder="https://example.com/ids/policy/" />
+    </div>
+
+    <div>  
+      <label>UUID</label>
+      <input required type="text" id="uuid" disabled value="ee606c4b-beff-4f5b-a8cc-8b0a5a526b4e" />
+    </div>
+    
+    <div>
+      <label>Policy Type</label>
+      <select id="policyType">
+        <option value="Offer">Offer</option>
+        <option value="Contract">Contract</option>
+        <option value="Agreement">Agreement</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="single-line">
+    <div>
+      <label>Data Provider</label>
+      <input required type="url" id="provider" placeholder="e.g. http://dataprovider" />
+    </div>
+    <div>
+      <label>Data Consumer</label>
+      <input required type="url" id="consumer" placeholder="e.g. http://dataconsumer" />
+    </div>
+  </div>
+
+  <label>Data URI</label>
+  <input required type="url" id="dataUri" placeholder="e.g. http://example.com/ids/data/abc" />
+
+    <h3>Restrictions</h3>
+    
+    <div id="restrictions">
+
+      <div>  
+        <label>Application <input type="checkbox" id="useApplication" /></label>
+        <input class="field" type="url" id="Application" placeholder="ee606c4b-beff-4f5b-a8cc-8b0a5a526b4e"/>
+      </div>
+
+      <div>  
+        <label>Connector <input type="checkbox" id="useConnector" /></label>
+        <input class="field"type="url" id="Connector" placeholder="ee606c4b-beff-4f5b-a8cc-8b0a5a526b4e"/>
+      </div>
+
+      <div>  
+        <label>Number of Usage <input type="checkbox" id="useUsage" /></label>
+        <input class="field"type="number" id="Usage" placeholder="e.g. 10" min="1"/>
+      </div>
+
+      <div>  
+      <label>Time Duration <input type="checkbox" id="useDuration" /></label>
+      <div class="field" id="Duration">
+        <div class="single-line">
+          <div>
+            <label>Year</label>
+            <input type="number" id="DurationYear" placeholder="e.g. 1" min="0"/>
+          </div>
+          <div>
+            <label>Month</label>
+            <input type="number" id="DurationMonth" placeholder="e.g. 1"min="0"/>
+          </div>
+          <div>
+            <label>Day</label>
+            <input type="number" id="DurationDay" placeholder="e.g. 1"min="0"/>
+          </div>
+          <div>
+            <label>Hour</label>
+            <input type="number" id="DurationHour" placeholder="e.g. 1"min="0"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div>
+        <label>Start Time <input type="checkbox" id="useStartTime" /></label>
+        <input type="datetime-local" id="StartTime" class="field"/>
+      </div>
+
+      <div>
+        <label>End Time <input type="checkbox" id="useEndTime" /></label>
+        <input type="datetime-local" id="EndTime" class="field"/>
+      </div>
+
+      <div>  
+        <label>Event <input type="checkbox" id="useEvent" /></label>
+        <input type="url" id="Event" placeholder="http://example.com/event/eventname" class="field"/>
+      </div>
+
+      <div>  
+        <label>Location <input type="checkbox" id="useLocation" /></label>
+        <input type="url" id="Location" placeholder="http://example.com/location/locationName" class="field"/>
+      </div>
+
+      <div>  
+        <label>Purpose <input type="checkbox" id="usePurpose" /></label>
+        <select name="purpose" id="Purpose" class="field">
+          <option value="purpose1">Purpose1</option>
+          <option value="purpose2">Purpose2</option>
+          <option value="purpose3">Purpose3</option>
+          <option value="purpose4">Purpose4</option>
+        </select>
+      </div>
+
+    </div>
+
+
+  <h3>Duties</h3>
+  <div class="single-line">
+    <button type="button" id="addPreDuty">Add Pre Duty</button>
+    <button type="button" id="addPostDuty">Add Post Duty</button>
+  </div>
+
+  <div class="single-line"> 
+    <button type="submit" id="createPolicy">Generate Policy</button>
+  </div>
+</form>
+<div id="policyTranslation">
+  <h3>Policy summary</h3>
+  <p>A data provider is an party that is issuing the rule.
+Here the provider is myCompany party.
+This party is either the Data Owner or the Data Provider
+of the specified data asset.
+In this Policy OFFER example, the permission rule allows the
+Data Consumer to use the target asset.The identifier of this
+policy and the target asset are http://example.com/policy/myPolicy
+and http://example.com/data/sample, respectively.</p>
+</div>
+
+<!-- Load the template-specific script -->

@@ -1,0 +1,70 @@
+/* -----  General Content ----- */
+
+#find-1 button {
+    margin-top: 1rem;
+    padding: 0.6rem;
+    background-color: #7C4DFF;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#find-1 button:hover {
+    background-color: #6d3dee;
+}
+
+#find-1 .content {
+    display: flex;
+    gap: 1rem;
+    max-height: 40vh;
+}
+
+#find-1 .scrollable {
+    flex: 1;
+    overflow-y: auto;
+    background: white;
+    border-radius: 6px;
+}
+
+#find-1 .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+/* ----- Conors ----- */
+#find-1 .dot.green  { background-color: #2E8540; }
+#find-1 .dot.yellow { background-color: #F6A600; }
+#find-1 .dot.orange { background-color: #D97904; }
+#find-1 .dot.red    { background-color: #C62828; }
+
+
+/* -----  Table ----- */
+#find-1 table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+#find-1 th {
+    background-color: #7C4DFF;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#find-1 td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#find-1 tr:hover td {
+    background-color: rgba(0, 0, 0, 0.20);
+}
