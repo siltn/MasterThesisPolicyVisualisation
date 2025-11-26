@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     localStorage.setItem("group", group);
     localStorage.setItem("lang", lang);
 
-    const res = await fetch("/assets/data/questions.json");
+    const res = await fetch("assets/data/questions.json");
     const questions = await res.json();
     let currentIndex = 0;
 
@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Load main template
         templateUrl = "";
         if(q.type == "review"){
-          templateUrl = `/assets/templates/${q.type}-${lang}.html`;
+          templateUrl = `assets/templates/${q.type}-${lang}.html`;
         }
         else{
-          templateUrl = `/assets/templates/group-${group}/${q.type}-${lang}.html`;
+          templateUrl = `assets/templates/group-${group}/${q.type}-${lang}.html`;
         }
         try {
             const templateRes = await fetch(templateUrl);
@@ -93,10 +93,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const script = document.createElement("script");
 
     if(q.type == "review"){
-      script.src = `/assets/templates/${q.type}.js`;
+      script.src = `assets/templates/${q.type}.js`;
     }
     else{ 
-      script.src = `/assets/templates/group-${group}/${q.type}.js`;
+      script.src = `assets/templates/group-${group}/${q.type}.js`;
     }
     main.appendChild(script);
   }
